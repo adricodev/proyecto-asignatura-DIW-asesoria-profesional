@@ -1,0 +1,305 @@
+/* RESET BASE*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CONTENEDOR GENERAL*/
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ELEMENTO HEADER*/
+header{
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+header.contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+header img{
+    width: 100px;
+}
+
+.nombre-empresa{
+    font-size: 13px;
+    color: #666;
+}
+
+header .contenedor > img,
+header .contenedor > .nombre-empresa{
+    display: inline-block;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+}
+
+nav a:hover{
+    color: #2f80c1
+}
+
+/* CONTENEDOR, TEXTO Y CONTENIDO HERO*/
+.hero{
+    background-color: #f4f8fb;
+    padding: 60px 20px;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero p{
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.boton-solicitar{
+    display: inline-block;
+    background-color: #6298c5;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.boton-solicitar{
+    background-color: #84afcf;
+}
+
+/* CARTAS DE SERVICIO*/
+.servicios{
+    padding: 60px;
+}
+
+.servicios h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.servicios .contenedor > p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card{
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+}
+
+card h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #2f80c1;
+}
+
+.card ul{
+    padding: 0 0 0 20px;
+}
+
+.card li{
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #1f2a36;
+    color: #ffffff;
+    padding: 40px 0 20px 0;
+}
+
+.contenedor-footer{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contenedor-footer{
+    flex: 1;
+    min-width: 200px;
+}
+
+footer h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+footer p{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer li{
+    margin-bottom: 8px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer a:hover{
+    color: #2f80c1;
+}
+
+/* SERVICIOS */
+.card p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* CONTACTO */
+Ç
+.bloque-contacto{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.formulario-contacto div{
+    margin-bottom: 15px;
+}
+
+.formulario-contacto label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.formulario-contacto input,
+.formulario-contacto select,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font font-size: 14px;
+}
+
+.datos-contacto{
+    flex: 1;
+    min-width: 250px;
+}
+
+.datos-contacto{
+    margin-bottom: 15px;
+}
+
+.datos-contacto p{
+    margin-bottom: 10px;
+}
+
+.survey-submit button{
+    background-color: #2f80c1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.survey-submit button:hover{
+    background-color: #194c74;
+}
+
+/* DISEÑO RESPONSIVE PARA DISPOSITIVOS */
+
+@media(max-width:768px){
+    header .contenedor{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero{
+        padding:40px 20px;
+        text-align: center;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .bloque-contacto {
+        flex-direction: column;
+    }
+
+    .formulario-contacto,
+    .datos-contacto{
+        width: 100%;
+    }
+}
